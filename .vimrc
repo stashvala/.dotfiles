@@ -6,4 +6,7 @@ set ai
 set number
 set hlsearch
 set ruler
+set ignorecase
+set smartcase
+set wildmenu
 highlight Comment ctermfg=green
