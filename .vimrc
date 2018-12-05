@@ -9,4 +9,6 @@ set ruler
 set ignorecase
 set smartcase
 set wildmenu
+set nowrap
+set colorcolumn=120
 highlight Comment ctermfg=green
