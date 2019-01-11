@@ -4,7 +4,7 @@ is_installed () {
   for prog in "$@"
   do
     if ! [ -x "$(command -v $prog)" ]; then
-    	echo 'Error: $prog is not installed!' >&2
+    	echo "Error: $prog is not installed!" >&2
     	exit 1
     fi
   done
@@ -12,6 +12,9 @@ is_installed () {
 
 # checks for programs we are configuring
 is_installed "nvim" "tmux" "ranger"
+
+# init ranger configs
+ranger --copy-config=all
 
 # checks for additional dependecy programs
 is_installed "curl" "pip3"
